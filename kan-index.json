@@ -1,0 +1,8 @@
+{
+  "$comment": "KAN registry index for github.com/Cadealishus/KAN-. Add a mod by putting its folder in this repo and listing the folder path here. Each folder must contain manifest.json.",
+  "registry": "KAN (Kerfin Archive Network)",
+  "format": 1,
+  "mods": [
+    "halo"
+  ]
+}
