@@ -1,0 +1,36 @@
+{
+  "$comment": "Halo Ring Collection — ring definitions. implemented:true gets physics + detailed rendering; the rest are data-only placeholders so no ring adds a gravity well until it is finished.",
+  "defaults": {
+    "radius": 5000000,
+    "width": 320000,
+    "thickness": 14000,
+    "wallHeight": 90000,
+    "targetGravity": 9.2,
+    "atmosphereHeight": 26000,
+    "activationRange": 1400000,
+    "visualRange": 80000000,
+    "theme": "verdant"
+  },
+  "rings": [
+    {
+      "id": "KRI-01",
+      "displayName": "KRI-01 — Verdant Halo",
+      "implemented": true,
+      "radius": 5000000,
+      "width": 320000,
+      "targetGravity": 9.2,
+      "terrainSeed": 1101,
+      "theme": "verdant",
+      "orbit": { "parent": "kerfin", "a": 24000000, "phase": 0.4, "inc": 0.22 },
+      "blurb": "The first Kerfin Ring Installation. Nobody agrees on who built it, and the surveys keep coming back with different numbers."
+    }
+  ],
+  "generated": {
+    "$comment": "KRI-02..KRI-26 are generated deterministically by halo-ring-mod.js from these rules, so the file stays readable. Replace any of them with a full entry above to implement it.",
+    "count": 25,
+    "startIndex": 2,
+    "radiusBase": 3600000,
+    "radiusStep": 200000,
+    "themes": ["verdant", "desert", "frozen", "oceanic", "ashen", "storm"]
+  }
+}
