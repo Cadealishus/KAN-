@@ -1,0 +1,27 @@
+{
+  "id": "halo-ring-collection",
+  "name": "Halo Ring Collection — All 26",
+  "version": "0.5.0",
+  "author": "benjeep10",
+  "description": "Kerfin Ring Installations. KRI-01: 8,000 km radius, 500 km band, real ring physics (far-field orbital model + rotating-frame centrifugal/Coriolis), heightmapped floor with terrain-aware collision, and a system-map ring marker. 25 further rings are data.",
+  "hsp": {
+    "minVersion": "0.84",
+    "extApi": 1
+  },
+  "entry": "src/halo-ring-mod.js",
+  "scripts": [
+    "src/hsp-ext-shim.js",
+    "src/halo-ring-terrain.js",
+    "src/halo-ring-physics.js",
+    "src/halo-ring-renderer.js",
+    "src/halo-ring-mod.js"
+  ],
+  "data": [
+    "data/rings.json",
+    "data/KRI-01-heightmap.png"
+  ],
+  "assets": [],
+  "init": "HaloRingMod.init(window.HSP_EXT)",
+  "removable": true,
+  "modifiesCoreFiles": false
+}
